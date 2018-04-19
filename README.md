@@ -9,4 +9,5 @@ pandas (0.20.3)
 import Hurst  
 ts = list(range(50))  
 hurst = Hurst.hurst(ts)
-Tip: ts has to be object list(n_samples,) or np.array(n_samples,)
+# Tips
+The input ts has to be object list(n_samples,) or np.array(n_samples,).
