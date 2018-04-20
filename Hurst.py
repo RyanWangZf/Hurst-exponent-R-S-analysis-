@@ -34,8 +34,8 @@ def hurst(ts):
         mean_list=[np.mean(x) for x in subset_list]
         for i in range(len(subset_list)):
             cumsum_list = pd.Series(subset_list[i]-mean_list[i]).cumsum()
-            R = max(cumsum_list)-min(cumsum_list)
-            S = np.std(subset_list[i])
+            R += max(cumsum_list)-min(cumsum_list)
+            S += np.std(subset_list[i])
         R_S_dict.append({"R":R/len(subset_list),"S":S/len(subset_list),"n":k})
     
     log_R_S = []
