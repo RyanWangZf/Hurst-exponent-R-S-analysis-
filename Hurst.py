@@ -9,7 +9,7 @@
 # hurst = Hurst.hurst(ts)
 # Tip: ts has to be object list(n_samples,) or np.array(n_samples,)
 
-__Author__ = "Zifeng Wang"
+__Author__ = "Ryan Wang"
 
 import numpy as np
 import pandas as pd
